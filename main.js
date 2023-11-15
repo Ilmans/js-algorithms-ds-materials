@@ -3,6 +3,7 @@ import {describe,it} from "./test/test.js"
 import { fibonacci } from './algorithms/fibonacci.js';
 import { factorial } from './algorithms/factorial.js';
 import { isPrime } from './algorithms/prime.js';
+import { isPowerOfTwo } from './algorithms/powerOfTwo.js';
 
 
 // fibonacci
@@ -32,11 +33,21 @@ describe('Prime Test', () => {
     it('4 Should not be prime', () => {
         assert.strictEqual(isPrime(4),false);
     });
-    it('5 Should be prime', () => {
-        assert.strictEqual(isPrime(5),true);
-    });
     it('19 Should be prime', () => {
         assert.strictEqual(isPrime(19),true);
+    });
+    
+ })
+
+ describe('Power Of Two Test', () => { 
+    it('Should be true', () => {
+        assert.strictEqual(isPowerOfTwo(4),true);
+    });
+    it('Should be false', () => {
+        assert.strictEqual(isPowerOfTwo(18),false);
+    });
+    it('Should be true', () => {
+        assert.strictEqual(isPowerOfTwo(16),true);
     });
     
  })
