@@ -1,3 +1,5 @@
+
+// BIG-O = O(log n)
 export const palindrom = (string) => {
   if (string.length === 1) return true;
 

@@ -5,6 +5,7 @@ import { factorial, recursiveFactorial } from './algorithms/factorial.js';
 import { isPrime } from './algorithms/prime.js';
 import { isPowerOfTwo } from './algorithms/powerOfTwo.js';
 import { palindrom } from './algorithms/recursive.js';
+import { linearSearch } from './algorithms/search.js';
 
 
 // fibonacci
@@ -63,4 +64,12 @@ describe('Prime Test', () => {
     it("YANJAY Should be false",() => {
         assert.strictEqual(palindrom("yanjay"),false);
     })
+ })
+
+
+ describe('Test linear search', () => { 
+    it('10 , should be found in index 4', () => {
+        assert.deepStrictEqual(linearSearch([-5,4,5,6,10],10),4)
+    });
+    
  })
