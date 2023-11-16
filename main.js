@@ -4,6 +4,7 @@ import { fibonacci } from './algorithms/fibonacci.js';
 import { factorial, recursiveFactorial } from './algorithms/factorial.js';
 import { isPrime } from './algorithms/prime.js';
 import { isPowerOfTwo } from './algorithms/powerOfTwo.js';
+import { palindrom } from './algorithms/recursive.js';
 
 
 // fibonacci
@@ -50,4 +51,16 @@ describe('Prime Test', () => {
         assert.strictEqual(isPowerOfTwo(16),true);
     });
     
+ })
+
+ describe("Palindrome recursive",() => {
+    it("MADAM Should be true",() => {
+        assert.strictEqual(palindrom("madam"),true);
+    })
+    it("LEVEL Should be true",() => {
+        assert.strictEqual(palindrom("level"),true);
+    })
+    it("YANJAY Should be false",() => {
+        assert.strictEqual(palindrom("yanjay"),false);
+    })
  })
