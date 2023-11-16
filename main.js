@@ -1,7 +1,7 @@
 import assert from 'assert';
 import {describe,it} from "./test/test.js"
 import { fibonacci } from './algorithms/fibonacci.js';
-import { factorial } from './algorithms/factorial.js';
+import { factorial, recursiveFactorial } from './algorithms/factorial.js';
 import { isPrime } from './algorithms/prime.js';
 import { isPowerOfTwo } from './algorithms/powerOfTwo.js';
 
@@ -18,10 +18,10 @@ describe("Fibonacci test",() => {
 
 describe('Factorial Test', () => { 
     it('Should be 6', () => {
-        assert.equal(factorial(3),6);
+        assert.equal(recursiveFactorial(3),6);
     });
     it('Should be 120', () => {
-        assert.equal(factorial(5),120);
+        assert.equal(recursiveFactorial(5),120);
     });
     
  })
